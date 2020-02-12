@@ -11,16 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.RegisterActivity"></activity>
-        <activity android:name=".activity.LoginActivity" >
+        <activity android:name=".activity.owner.OwnerRegister2Activity"></activity>
+        <activity android:name=".activity.investor.InvestorRegister3Activity" />
+        <activity android:name=".activity.investor.InvestorRegister2Activity" />
+        <activity android:name=".activity.general.RegisterActivity" />
+        <activity android:name=".activity.general.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.InvestorActivity">
-        </activity>
+        <activity android:name=".activity.investor.InvestorActivity" />
     </application>
 
 </manifest>

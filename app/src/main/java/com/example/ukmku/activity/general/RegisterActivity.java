@@ -1,4 +1,4 @@
-package com.example.ukmku.activity;
+package com.example.ukmku.activity.general;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.ukmku.R;
+import com.example.ukmku.activity.investor.InvestorRegister2Activity;
+import com.example.ukmku.activity.owner.OwnerRegister2Activity;
 import com.example.ukmku.api.ApiClient;
 import com.example.ukmku.api.MyApi;
 import com.example.ukmku.model.Register;
@@ -26,7 +28,7 @@ import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextInputLayout til_Name, til_Username, til_Email, til_Password, til_RePassword;
+    private TextInputLayout til_Name, til_Email, til_Password, til_RePassword;
     private Button btn_Sign_Up, btn_To_Sign_In;
     private Spinner sp_Status;
     private String name, username, email, password, rePassword, status;
@@ -39,7 +41,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
 
         til_Name = (TextInputLayout) findViewById(R.id.edt_name);
-        til_Username = (TextInputLayout) findViewById(R.id.edt_username);
         til_Email = (TextInputLayout) findViewById(R.id.edt_email);
         til_Password = (TextInputLayout) findViewById(R.id.edt_password);
         til_RePassword = (TextInputLayout) findViewById(R.id.edt_repassword);
@@ -59,7 +60,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         switch (v.getId()) {
             case R.id.btn_sign_up:
                 name = til_Name.getEditText().getText().toString();
-                username = til_Username.getEditText().getText().toString();
                 email = til_Email.getEditText().getText().toString();
                 password = til_Password.getEditText().getText().toString();
                 rePassword = til_RePassword.getEditText().getText().toString();
@@ -86,13 +86,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             cek = false;
         } else {
             til_Name.setError(null);
-        }
-        if (TextUtils.isEmpty(username)) {
-            til_Username.setError("Username tidak boleh kosong");
-            til_Username.requestFocus();
-            cek = false;
-        } else {
-            til_Username.setError(null);
         }
         if (TextUtils.isEmpty(email)) {
             til_Email.setError("Email tidak boleh kosong");
@@ -139,9 +132,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
                 if (response.isSuccessful()) {
-                    Intent intent_to_Sign_In = new Intent(RegisterActivity.this, LoginActivity.class);
-                    startActivity(intent_to_Sign_In);
-                    finish();
+                    if (status.equals("Investor")){
+                        Intent intent_investor_2 = new Intent(RegisterActivity.this, InvestorRegister2Activity.class);
+                        startActivity(intent_investor_2);
+                    } else if(status.equals("Pemilik Usaha")){
+                        Intent intent_owner_2 = new Intent(RegisterActivity.this, OwnerRegister2Activity.class);
+                        startActivity(intent_owner_2);
+                    }
                 } else {
                     Toast.makeText(RegisterActivity.this, "Error", Toast.LENGTH_SHORT).show();
                 }

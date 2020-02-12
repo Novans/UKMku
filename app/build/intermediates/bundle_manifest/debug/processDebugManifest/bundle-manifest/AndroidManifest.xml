@@ -8,6 +8,8 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -16,8 +18,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.ukmku.activity.owner.OwnerRegister2Activity" />
+        <activity android:name="com.example.ukmku.activity.investor.InvestorRegister3Activity" />
+        <activity android:name="com.example.ukmku.activity.investor.InvestorRegister2Activity" />
         <activity android:name="com.example.ukmku.activity.RegisterActivity" />
         <activity android:name="com.example.ukmku.activity.LoginActivity" >
             <intent-filter>
@@ -26,8 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.ukmku.activity.InvestorActivity" >
-        </activity>
+        <activity android:name="com.example.ukmku.activity.investor.InvestorActivity" />
     </application>
 
 </manifest>

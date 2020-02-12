@@ -1,19 +1,17 @@
-package com.example.ukmku.activity;
+package com.example.ukmku.activity.general;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.ukmku.R;
+import com.example.ukmku.activity.investor.InvestorActivity;
 import com.example.ukmku.api.ApiClient;
 import com.example.ukmku.api.MyApi;
-import com.example.ukmku.model.Api_Token;
 import com.example.ukmku.model.Login;
 import com.example.ukmku.response.LoginResponse;
 import com.example.ukmku.utils.AppPreference;
@@ -25,9 +23,9 @@ import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextInputLayout til_Username, til_Password;
+    private TextInputLayout til_Email, til_Password;
     private Button btn_Sign_In, btn_To_Sign_Up;
-    private String username, password, status;
+    private String email, password, status;
     private MyApi myApi;
     private AppPreference appPreference;
 
@@ -38,7 +36,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         appPreference = new AppPreference(LoginActivity.this);
 
-        til_Username = (TextInputLayout) findViewById(R.id.edt_username);
+        til_Email = (TextInputLayout) findViewById(R.id.edt_email);
         til_Password = (TextInputLayout) findViewById(R.id.edt_password);
         btn_Sign_In = findViewById(R.id.btn_sign_in);
         btn_To_Sign_Up = findViewById(R.id.btn_to_sign_up);
@@ -61,10 +59,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void loginUser() {
-        username = til_Username.getEditText().toString();
+        email = til_Email.getEditText().toString();
         password = til_Password.getEditText().toString();
 
-        Login login = new Login(username, password);
+        Login login = new Login(email, password);
 
         myApi = ApiClient.getClient().create(MyApi.class);
 
