@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="30dp"
+    tools:context=".activity.owner.MediaPlayerActivity">
+
+    <TextView
+        android:id="@+id/tv_pelatihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/pelatihan"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ib_back2"
+        android:layout_width="43sp"
+        android:layout_height="43sp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_arrow_back_black_24dp" />
+
+    <ImageView
+        android:id="@+id/iv_logoMedia"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/tv_pelatihan"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@drawable/bg_menu"
+        android:src="@drawable/logo_login" />
+
+    <RelativeLayout
+        android:id="@+id/rl_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logoMedia"
+        android:background="@drawable/bg_menu"
+        android:backgroundTint="@color/colorCalmBlue">
+
+        <TextView
+            android:id="@+id/tv_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="00:00:00"
+            android:textSize="10dp" />
+
+        <SeekBar
+            android:id="@+id/sb_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_toLeftOf="@+id/tv_lengthAudio"
+            android:layout_toRightOf="@+id/tv_startTime"
+            android:progressBackgroundTintMode="@color/colorWhite"
+            android:splitTrack="false"
+            android:thumb="@drawable/custom_thumb" />
+
+        <TextView
+            android:id="@+id/tv_lengthAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:text="00:00:00"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_seekbar"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Berbicara di Depan Umum"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_artist_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_media"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Tung Desem Waringin"
+        android:textSize="10dp" />
+
+    <View
+        android:id="@+id/div_atas"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_artist_media"
+        android:layout_margin="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_media_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div_atas"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_fast_rewind_black_24dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_pause_black_24dp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_fast_forward_black_24dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_media_style"
+        android:layout_margin="10dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

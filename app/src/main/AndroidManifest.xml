@@ -8,11 +8,21 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.owner.OwnerRegister2Activity"></activity>
-        <activity android:name=".activity.investor.InvestorRegister3Activity" />
+        <activity android:name=".activity.investor.InvestorTransactionActivity"></activity>
+        <activity android:name=".activity.investor.InvestorProfileDetailActivity" />
+        <activity android:name=".activity.owner.OwnerProfileDetailActivity" />
+        <activity android:name=".activity.owner.OwnerProfileActivity" />
+        <activity android:name=".activity.owner.OwnerModalActivity" />
+        <activity android:name=".activity.owner.ProfitReportActivity" />
+        <activity android:name=".activity.investor.PaymentMethodActivity" />
+        <activity android:name=".activity.owner.MediaPlayerActivity" />
+        <activity android:name=".activity.general.NewsActivity" />
+        <activity android:name=".activity.owner.OwnerHomeActivity" />
+        <activity android:name=".activity.owner.OwnerRegister2Activity" />
         <activity android:name=".activity.investor.InvestorRegister2Activity" />
         <activity android:name=".activity.general.RegisterActivity" />
         <activity android:name=".activity.general.LoginActivity">
@@ -22,7 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.investor.InvestorActivity" />
+        <activity android:name=".activity.investor.InvestorHomeActivity" />
     </application>
 
 </manifest>

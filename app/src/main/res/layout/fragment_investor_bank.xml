@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/colorWhite"
+    tools:context=".fragment.investor.InvestorBankFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_bank_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_blue"
+            android:gravity="center"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:text="Menambah dan mengubah nomor rekening
+membutuhkan verifikasi dari sistem kami"
+            android:textColor="@color/colorWhite" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_account_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bank_alert"
+            android:layout_marginTop="26dp"
+            tools:listitem="@layout/item_bank" />
+
+        <View
+            android:id="@+id/div_tengah"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rv_account_list"
+            android:layout_marginVertical="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btn_add_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div_tengah"
+            android:background="@drawable/bg_button_blue"
+            android:text="@string/tambah_rekening"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

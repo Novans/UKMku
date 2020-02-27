@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_today"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:iconTint="@color/colorWhite"
+        android:title="@string/hari_ini" />
+
+    <item
+        android:id="@+id/nav_training"
+        android:icon="@drawable/ic_presentation"
+        android:iconTint="@color/colorWhite"
+        android:title="@string/pelatihan" />
+
+    <item
+        android:id="@+id/nav_money"
+        android:icon="@drawable/ic_money"
+        android:iconTint="@color/colorWhite"
+        android:title="@string/keuangan" />
+
+</menu>

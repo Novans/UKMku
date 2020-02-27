@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="30dp"
+    tools:context=".activity.investor.InvestorProfileDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_investor_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ib_back2"
+            android:layout_width="43sp"
+            android:layout_height="43sp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_investor_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/profil_investor"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_investor_profile"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_data_diri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_blue"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="8dp"
+            android:text="@string/data_diri"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_rekening_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="8dp"
+            android:text="@string/rekening_bank"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_profile_owner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ll_button_menu" />
+
+</RelativeLayout>

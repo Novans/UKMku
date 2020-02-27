@@ -2,22 +2,35 @@ package com.example.ukmku.activity.investor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 import com.example.ukmku.R;
+import com.example.ukmku.activity.general.RegisterActivity;
+import com.example.ukmku.api.ApiClient;
 import com.example.ukmku.api.MyApi;
+import com.example.ukmku.model.Religion;
+import com.example.ukmku.response.ReligionResponse;
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class InvestorRegister2Activity extends AppCompatActivity implements View.OnClickListener {
 
     private TextInputLayout til_nation, til_identity_number, til_born_place, til_born_nation,
-            til_born_date, til_religion, til_address, til_phone;
-    private Spinner sp_Gender;
+            til_born_date, til_religion, til_address, til_phone, til_education, til_work, til_salary;
+    private Spinner sp_Gender, sp_Salary, sp_Marriage;
     private Button btn_Next;
+    private ImageButton img_back;
     private String kewarganegaraan, tempatLahir, negaraLahir, bulanLahir, agama, alamat, lahir;
     private Integer noIdentitas, tanggalLahir, tahunLahir, noHP;
     private MyApi myApi;
@@ -40,8 +53,10 @@ public class InvestorRegister2Activity extends AppCompatActivity implements View
         sp_Gender = findViewById(R.id.sp_gender);
 
         btn_Next = findViewById(R.id.btn_next);
+        img_back = (ImageButton) findViewById(R.id.ib_back);
 
         btn_Next.setOnClickListener(this);
+        img_back.setOnClickListener(this);
 
     }
 
@@ -81,7 +96,7 @@ public class InvestorRegister2Activity extends AppCompatActivity implements View
         }
     }
 
-    private int tahun(String c){
+    private int tahun(String c) {
         return Integer.parseInt(c.substring(6, (c.length() - 1)));
     }
 
@@ -89,17 +104,54 @@ public class InvestorRegister2Activity extends AppCompatActivity implements View
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_next:
-                kewarganegaraan = til_nation.getEditText().getText().toString();
-                tempatLahir = til_born_place.getEditText().getText().toString();
-                negaraLahir = til_born_nation.getEditText().getText().toString();
-                lahir = til_born_date.getEditText().getText().toString();
-                tanggalLahir = tanggal(lahir);
-                bulanLahir = bulan(lahir);
-                tahunLahir = tahun(lahir);
-                agama = til_religion.getEditText().getText().toString();
-                alamat = til_address.getEditText().getText().toString();
-                noIdentitas = Integer.parseInt(til_identity_number.getEditText().getText().toString());
-                noHP = Integer.parseInt(til_phone.getEditText().getText().toString());
+                RegisterUser();
+
+
+                break;
+            case R.id.ib_back:
+                Intent intent_back = new Intent(InvestorRegister2Activity.this, RegisterActivity.class);
+                startActivity(intent_back);
+                finish();
+                break;
         }
     }
+
+    private boolean RegisterCheck() {
+        boolean cek = true;
+
+        return cek;
+    }
+
+    private void RegisterUser() {
+        kewarganegaraan = til_nation.getEditText().getText().toString();
+        tempatLahir = til_born_place.getEditText().getText().toString();
+        negaraLahir = til_born_nation.getEditText().getText().toString();
+        lahir = til_born_date.getEditText().getText().toString();
+        tanggalLahir = tanggal(lahir);
+        bulanLahir = bulan(lahir);
+        tahunLahir = tahun(lahir);
+        agama = til_religion.getEditText().getText().toString();
+        alamat = til_address.getEditText().getText().toString();
+        noIdentitas = Integer.parseInt(til_identity_number.getEditText().getText().toString());
+        noHP = Integer.parseInt(til_phone.getEditText().getText().toString());
+
+        myApi = ApiClient.getClient().create(MyApi.class);
+
+        Call<ReligionResponse> religionCall = myApi.getReligion();
+
+        religionCall.enqueue(new Callback<ReligionResponse>() {
+            @Override
+            public void onResponse(Call<ReligionResponse> call, Response<ReligionResponse> response) {
+                ArrayList<Religion> religions = new ArrayList<>();
+
+            }
+
+            @Override
+            public void onFailure(Call<ReligionResponse> call, Throwable t) {
+
+            }
+        });
+
+    }
+
 }

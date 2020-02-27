@@ -3,7 +3,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="16dp"
@@ -16,6 +15,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ib_back2"
+            android:layout_width="43sp"
+            android:layout_height="43sp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_alignParentLeft="true" />
 
         <TextView
             android:id="@+id/tv_owner"
@@ -134,7 +140,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/tanggal_lahir"
+                    android:hint="@string/tanggal_lahir_dd_mm_yyyy"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -191,7 +197,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/kode_pos"
-                    android:inputType="text" />
+                    android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -264,11 +270,11 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_next"
+            android:id="@+id/btn_done2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_button_blue"
-            android:text="@string/selanjutnya"
+            android:text="@string/selesai"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="20dp" />

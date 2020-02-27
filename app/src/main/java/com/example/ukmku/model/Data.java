@@ -1,11 +1,15 @@
 package com.example.ukmku.model;
 
-import java.util.ArrayList;
-
 public class Data {
     private User user;
+    private ApiToken api_token;
+    private String message;
 
-    private Api_Token apiToken;
+    public Data(User user, ApiToken api_token, String message) {
+        this.user = user;
+        this.api_token = api_token;
+        this.message = message;
+    }
 
     public User getUser() {
         return user;
@@ -15,13 +19,19 @@ public class Data {
         this.user = user;
     }
 
-    public Api_Token getApiToken() {
-        return apiToken;
+    public ApiToken getApi_token() {
+        return api_token;
     }
 
-    public void setApiToken(Api_Token apiToken) {
-        this.apiToken = apiToken;
+    public void setApi_token(ApiToken api_token) {
+        this.api_token = api_token;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
 }
-

@@ -1,11 +1,10 @@
 package com.example.ukmku.model;
 
 public class Register {
-    private String name, username, email, password, status;
+    private String name, email, password, status;
 
-    public Register(String name, String username, String email, String password, String status) {
+    public Register(String name, String email, String password, String status) {
         this.name = name;
-        this.username = username;
         this.email = email;
         this.password = password;
         this.status = status;
@@ -17,14 +16,6 @@ public class Register {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getEmail() {

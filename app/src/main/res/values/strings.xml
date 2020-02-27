@@ -7,8 +7,8 @@
 
     <string-array name="list_status">
         <item>Pilih Status</item>
-        <item>Pemilik Usaha</item>
-        <item>Investor</item>
+        <item>OWNER</item>
+        <item>INVESTOR</item>
     </string-array>
 
     <string-array name="list_gender">
@@ -58,9 +58,49 @@
     <string name="kecamatan">Kecamatan</string>
     <string name="kelurahan">Kelurahan</string>
     <string name="provinsi">Provinsi</string>
-    <string name="provinsi">Provinsi</string>
     <string name="kode_pos">Kode Pos</string>
     <string name="no_telpon_kantor">No. Telpon Kantor</string>
     <string name="jenis_usaha">Jenis Usaha</string>
     <string name="nama_direktur">Nama Direktur</string>
+    <string name="tanggal_lahir_dd_mm_yyyy">Tanggal Lahir (DD-MM-YYYY)</string>
+    <string name="hari_ini">Hari Ini</string>
+    <string name="pelatihan">Pelatihan</string>
+    <string name="keuangan">Keuangan</string>
+    <string name="cari_produk">Cari Produk</string>
+    <string name="produk">Produk</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="metode_pembayaran">Metode Pembayaran</string>
+    <string name="laporan_laba">Laporan Laba</string>
+    <string name="modal_usaha">Modal Usaha</string>
+    <string name="masukkan_laba_untung_rugi">Masukkan Laba Untung/Rugi</string>
+    <string name="modal_anda_saat_ini">Modal Anda Saat Ini</string>
+    <string name="tarik">Tarik</string>
+    <string name="putar">Putar</string>
+    <string name="total_modal_anda_saat_ini">Total Modal Anda Saat Ini</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="laba_anda_bulan_ini">Laba Anda Bulan Ini</string>
+    <string name="anda_belum_melaporkan_laba_bulan_ini">Anda Belum Melaporkan Laba Bulan Ini</string>
+    <string name="total_laba_anda_bulan_ini">Total Laba Anda Bulan Ini</string>
+    <string name="unggah">Unggah</string>
+    <string name="halo">Halo</string>
+    <string name="laba_usaha">Laba Usaha</string>
+    <string name="keluar">Keluar</string>
+    <string name="ntp">NTP</string>
+    <string name="tanggal_berdiri">Tanggal Berdiri</string>
+    <string name="no_telepon">No Telepon</string>
+    <string name="ubah">Ubah</string>
+    <string name="tambah_rekening">Tambah Rekening</string>
+    <string name="profil_investor">Profil Investor</string>
+    <string name="profil_pemilik_usaha">Profil Pemilik Usaha</string>
+    <string name="data_diri">Data Diri</string>
+    <string name="nomor_identitas">Nomor Identitas</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="penghasilan">Penghasilan</string>
+    <string name="sumber_penghasilan">Sumber Penghasilan</string>
+    <string name="status_pernikahan">Status Pernikahan</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="jual">Jual</string>
+    <string name="beli">Beli</string>
+    <string name="rekening_bank">Rekening Bank</string>
 </resources>

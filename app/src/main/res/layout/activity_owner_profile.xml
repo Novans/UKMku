@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/colorWhite"
+    tools:context=".activity.owner.OwnerProfileActivity">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="43sp"
+        android:layout_height="43sp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_close_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ib_close"
+        android:text="@string/halo"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hello"
+        android:text="Humfrey Prasetyo Rapri"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack" />
+
+    <View
+        android:id="@+id/div_atas"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_name"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div_atas"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginVertical="30dp" >
+
+        <TextView
+            android:id="@+id/tv_profile_investor_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:drawablePadding="20dp"
+            android:text="@string/profil_pemilik_usaha"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_umkm_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_assignment_black_24dp"
+            android:drawablePadding="20dp"
+            android:layout_marginVertical="15dp"
+            android:text="@string/laba_usaha"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_modal_umkm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_money"
+            android:drawablePadding="20dp"
+            android:text="@string/modal_usaha"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:clickable="true" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_menu"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div_bawah"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_open_exit_door"
+        android:drawablePadding="20dp"
+        android:text="@string/keluar"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+</RelativeLayout>

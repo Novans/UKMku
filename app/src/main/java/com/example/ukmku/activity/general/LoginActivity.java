@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.ukmku.R;
-import com.example.ukmku.activity.investor.InvestorActivity;
+import com.example.ukmku.activity.investor.InvestorHomeActivity;
 import com.example.ukmku.api.ApiClient;
 import com.example.ukmku.api.MyApi;
 import com.example.ukmku.model.Login;
@@ -59,8 +59,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void loginUser() {
-        email = til_Email.getEditText().toString();
-        password = til_Password.getEditText().toString();
+        email = til_Email.getEditText().getText().toString();
+        password = til_Password.getEditText().getText().toString();
+
+        System.out.println(email);
 
         Login login = new Login(email, password);
 
@@ -72,17 +74,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 if (response.isSuccessful()) {
-                    String token = response.body().getData().getApiToken().toString();
-                    status = response.body().getData().getUser().getStatus().toString();
+                    String token = response.body().getData().getApi_token().getToken();
+                    status = response.body().getData().getUser().getStatus();
 
                     appPreference.saveToken(token);
 
-                    if (status.equals("Investor")) {
-                        Intent intent_sign_in = new Intent(LoginActivity.this, InvestorActivity.class);
+                    if (status.equals("INVESTOR")) {
+                        Intent intent_sign_in = new Intent(LoginActivity.this, InvestorHomeActivity.class);
                         startActivity(intent_sign_in);
                         finish();
-                    } else if (status.equals("Pemiik")){
-
+                    } else if (status.equals("OWNER")){
+                        Toast.makeText(LoginActivity.this, "Aku Pemilik", Toast.LENGTH_SHORT).show();
                     }
 
                 } else {
@@ -103,7 +105,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         if (appPreference.isLoggedIn()) {
             if (status.equals("Investor")) {
-                Intent intent = new Intent(LoginActivity.this, InvestorActivity.class);
+                Intent intent = new Intent(LoginActivity.this, InvestorHomeActivity.class);
                 startActivity(intent);
                 finish();
             } else {

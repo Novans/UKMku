@@ -18,8 +18,9 @@ import com.example.ukmku.activity.investor.InvestorRegister2Activity;
 import com.example.ukmku.activity.owner.OwnerRegister2Activity;
 import com.example.ukmku.api.ApiClient;
 import com.example.ukmku.api.MyApi;
+import com.example.ukmku.model.Errors;
 import com.example.ukmku.model.Register;
-import com.example.ukmku.response.RegisterResponse;
+import com.example.ukmku.response.BaseResponse;
 import com.google.android.material.textfield.TextInputLayout;
 
 import retrofit2.Call;
@@ -122,15 +123,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private void RegisterUser() {
 
-        Register register = new Register(name, username, email, password, status);
+        Register user = new Register(name, email, password, status);
 
         myApi = ApiClient.getClient().create(MyApi.class);
 
-        Call<RegisterResponse> registerCall = myApi.register(register);
+        Call<BaseResponse> registerCall = myApi.register(user);
 
-        registerCall.enqueue(new Callback<RegisterResponse>() {
+        registerCall.enqueue(new Callback<BaseResponse>() {
             @Override
-            public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
+            public void onResponse(Call<BaseResponse> call, Response<BaseResponse> response) {
                 if (response.isSuccessful()) {
                     if (status.equals("Investor")){
                         Intent intent_investor_2 = new Intent(RegisterActivity.this, InvestorRegister2Activity.class);
@@ -140,12 +141,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         startActivity(intent_owner_2);
                     }
                 } else {
-                    Toast.makeText(RegisterActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, response.body().getErrors().toString(), Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
-            public void onFailure(Call<RegisterResponse> call, Throwable t) {
+            public void onFailure(Call<BaseResponse> call, Throwable t) {
                 Toast.makeText(RegisterActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });

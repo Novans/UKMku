@@ -1,10 +1,19 @@
 package com.example.ukmku.model;
 
-public class User {
-    private String status;
+import java.sql.Timestamp;
 
-    public User(String status) {
+public class User {
+    private String id, name, email, password, status;
+    private Timestamp created_at, updated_at;
+
+    public User(String id, String name, String email, String password, String status, Timestamp created_at, Timestamp updated_at) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
         this.status = status;
+        this.created_at = created_at;
+        this.updated_at = updated_at;
     }
 
     public String getStatus() {
@@ -14,4 +23,53 @@ public class User {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Timestamp getCreated_at() {
+        return created_at;
+    }
+
+    public void setCreated_at(Timestamp created_at) {
+        this.created_at = created_at;
+    }
+
+    public Timestamp getUpdated_at() {
+        return updated_at;
+    }
+
+    public void setUpdated_at(Timestamp updated_at) {
+        this.updated_at = updated_at;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
 }
