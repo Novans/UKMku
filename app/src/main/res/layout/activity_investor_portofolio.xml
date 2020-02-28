@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="30dp"
+    tools:context=".fragment.investor.InvestorPortofolioActivity">
+
+    <TextView
+        android:id="@+id/tv_portofolio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/portofolio"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ib_back2"
+        android:layout_width="43sp"
+        android:layout_height="43sp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_arrow_back_black_24dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_portofolio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_back2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_gray"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tv_total_tabungan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/total_nilai_tabungan"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_jumlah_tabungan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_total_tabungan"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Rp 0"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@id/tv_jumlah_tabungan" >
+
+            <TextView
+                android:id="@+id/tv_total_keuntungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/total_nilai_keuntungan"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_keuntungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_total_keuntungan"
+                android:layout_marginTop="5dp"
+                android:text="Rp 0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@id/tv_jumlah_tabungan" >
+
+            <TextView
+                android:id="@+id/tv_total_keuntungan_persen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/total_nilai_keuntungan"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_keuntungan_persen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_total_keuntungan"
+                android:layout_marginTop="5dp"
+                android:text="0 %"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_portofolio"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/anda_tidak_memiliki_portofolio"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_post"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_portofolio"
+        android:layout_marginTop="35dp"
+        tools:listitem="@layout/item_portofolio"
+        android:visibility="gone" />
+
+</RelativeLayout>

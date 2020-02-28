@@ -15,7 +15,7 @@
 11-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:7:5-36:19
+13-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:7:5-38:19
 14        android:allowBackup="true"
 14-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -33,62 +33,68 @@
 21-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:13:9-35
 22        android:theme="@style/AppTheme" >
 22-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:14:9-40
-23        <activity android:name="com.example.ukmku.activity.investor.InvestorTransactionActivity" />
-23-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:15:9-92
-23-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:15:19-80
-24        <activity android:name="com.example.ukmku.activity.investor.InvestorProfileDetailActivity" />
-24-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:16:9-85
-24-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:16:19-82
-25        <activity android:name="com.example.ukmku.activity.owner.OwnerProfileDetailActivity" />
-25-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:17:9-79
-25-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:17:19-76
-26        <activity android:name="com.example.ukmku.activity.owner.OwnerProfileActivity" />
-26-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:18:9-73
-26-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:18:19-70
-27        <activity android:name="com.example.ukmku.activity.owner.OwnerModalActivity" />
-27-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:19:9-71
-27-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:19:19-68
-28        <activity android:name="com.example.ukmku.activity.owner.ProfitReportActivity" />
+23        <activity android:name="com.example.ukmku.fragment.investor.InvestorPortofolioActivity" />
+23-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:15:9-91
+23-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:15:19-79
+24        <activity android:name="com.example.ukmku.fragment.investor.InvestorTransactionActivity" />
+24-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:16:9-83
+24-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:16:19-80
+25        <activity android:name="com.example.ukmku.activity.investor.InvestorTransactionActivity" />
+25-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:17:9-83
+25-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:17:19-80
+26        <activity android:name="com.example.ukmku.activity.investor.InvestorProfileDetailActivity" />
+26-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:18:9-85
+26-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:18:19-82
+27        <activity android:name="com.example.ukmku.activity.owner.OwnerProfileDetailActivity" />
+27-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:19:9-79
+27-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:19:19-76
+28        <activity android:name="com.example.ukmku.activity.owner.OwnerProfileActivity" />
 28-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:20:9-73
 28-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:20:19-70
-29        <activity android:name="com.example.ukmku.activity.investor.PaymentMethodActivity" />
-29-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:21:9-77
-29-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:21:19-74
-30        <activity android:name="com.example.ukmku.activity.owner.MediaPlayerActivity" />
-30-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:22:9-72
-30-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:22:19-69
-31        <activity android:name="com.example.ukmku.activity.general.NewsActivity" />
-31-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:23:9-67
-31-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:23:19-64
-32        <activity android:name="com.example.ukmku.activity.owner.OwnerHomeActivity" />
-32-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:24:9-70
-32-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:24:19-67
-33        <activity android:name="com.example.ukmku.activity.owner.OwnerRegister2Activity" />
-33-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:25:9-75
-33-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:25:19-72
-34        <activity android:name="com.example.ukmku.activity.investor.InvestorRegister2Activity" />
-34-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:26:9-81
-34-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:26:19-78
-35        <activity android:name="com.example.ukmku.activity.general.RegisterActivity" />
-35-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:27:9-71
-35-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:27:19-68
-36        <activity android:name="com.example.ukmku.activity.general.LoginActivity" >
-36-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:28:9-34:20
-36-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:28:19-65
-37            <intent-filter>
-37-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:29:13-33:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:30:17-69
-38-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:30:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:32:17-77
-40-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:32:27-74
-41            </intent-filter>
-42        </activity>
-43        <activity android:name="com.example.ukmku.activity.investor.InvestorHomeActivity" />
-43-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:35:9-76
-43-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:35:19-73
-44    </application>
-45
-46</manifest>
+29        <activity android:name="com.example.ukmku.activity.owner.OwnerModalActivity" />
+29-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:21:9-71
+29-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:21:19-68
+30        <activity android:name="com.example.ukmku.activity.owner.ProfitReportActivity" />
+30-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:22:9-73
+30-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:22:19-70
+31        <activity android:name="com.example.ukmku.activity.investor.PaymentMethodActivity" />
+31-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:23:9-77
+31-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:23:19-74
+32        <activity android:name="com.example.ukmku.activity.owner.MediaPlayerActivity" />
+32-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:24:9-72
+32-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:24:19-69
+33        <activity android:name="com.example.ukmku.activity.general.NewsActivity" />
+33-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:25:9-67
+33-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:25:19-64
+34        <activity android:name="com.example.ukmku.activity.owner.OwnerHomeActivity" />
+34-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:26:9-70
+34-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:26:19-67
+35        <activity android:name="com.example.ukmku.activity.owner.OwnerRegister2Activity" />
+35-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:27:9-75
+35-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:27:19-72
+36        <activity android:name="com.example.ukmku.activity.investor.InvestorRegister2Activity" />
+36-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:28:9-81
+36-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:28:19-78
+37        <activity android:name="com.example.ukmku.activity.general.RegisterActivity" />
+37-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:29:9-71
+37-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:29:19-68
+38        <activity android:name="com.example.ukmku.activity.general.LoginActivity" >
+38-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:30:9-36:20
+38-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:30:19-65
+39            <intent-filter>
+39-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:31:13-35:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:32:17-69
+40-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:32:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:34:17-77
+42-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:34:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity android:name="com.example.ukmku.activity.investor.InvestorHomeActivity" />
+45-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:37:9-76
+45-->D:\Proyek\UKMku\app\src\main\AndroidManifest.xml:37:19-73
+46    </application>
+47
+48</manifest>

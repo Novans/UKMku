@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
-    tools:context=".fragment.owner.OwnerTrainingFragment">
+    tools:context=".fragment.investor.InvestorBuyFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_training" />
+        tools:listitem="@layout/item_buy" />
 
 </FrameLayout>

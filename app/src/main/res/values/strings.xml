@@ -103,4 +103,21 @@
     <string name="jual">Jual</string>
     <string name="beli">Beli</string>
     <string name="rekening_bank">Rekening Bank</string>
+    <string name="no_order">No Order</string>
+    <string name="properti">Properti</string>
+    <string name="nilai_order">Nilai Order</string>
+    <string name="pembelian_berhasil">Pembelian Berhasil</string>
+    <string name="nilai_tabungan_akhir">Nilai Tabungan Akhir</string>
+    <string name="penjualan_berhasil">Penjualan Berhasil</string>
+    <string name="portofolio">Portofolio</string>
+    <string name="total_nilai_tabungan">Total Nilai Tabungan</string>
+    <string name="total_nilai_keuntungan">Total Nilai Keuntungan</string>
+    <string name="anda_tidak_memiliki_portofolio">Anda Tidak Memiliki Portofolio</string>
+    <string name="manajer_investasi">Manajer Investasi</string>
+    <string name="harga_tabungan_semula">Harga Tabungan Semula</string>
+    <string name="harga_unit">Harga Unit</string>
+    <string name="akan_segera_di_transfer_dalam_2x24_jam">Akan Segera Di Transfer dalam 2x24 Jam</string>
+    <string name="keuntungan">Keuntungan</string>
+    <string name="nab">NAB</string>
+    <string name="barometer">Barometer</string>
 </resources>

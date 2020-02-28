@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_gray"
+        android:orientation="vertical"
+        android:paddingVertical="15dp">
+
+        <TextView
+            android:id="@+id/tv_properti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/properti"
+            android:textColor="@color/colorBlack"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_nama_properti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="Properti Indo Megah"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/div_atas"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_thanks_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="Terima Kasih Anda Telah Membeli Unit Properti Indo Megah"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/darker_gray">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="7dp"
+                    android:text="@string/nilai_tabungan_akhir"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_nilai_tabungan_akhir"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="7dp"
+                    android:text="Rp 176.000"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center_horizontal"
+            android:text="@string/akan_segera_di_transfer_dalam_2x24_jam"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/btn_beli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_button_blue"
+            android:text="@string/selesai"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_gray"
+        android:orientation="vertical"
+        android:paddingTop="11dp">
+
+        <TextView
+            android:id="@+id/no_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="No. Order 1907111566"
+            android:textColor="@color/colorBlack"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_tanggal_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="30dp"
+            android:text="11 Juli 2019, 05.03"
+            android:textColor="@color/colorBlack"
+            android:textSize="6sp" />
+
+        <View
+            android:id="@+id/div_atas"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="30dp"
+            android:text="@string/properti"
+            android:textColor="@color/colorBlack"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="Properti Indo Megah"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:text="@string/nilai_order"
+            android:textColor="@color/colorBlack"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="30dp"
+            android:text="Rp. 100.000"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/div_bawah"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="4dp"
+            android:text="@string/pembelian_berhasil"
+            android:textSize="6sp"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+</LinearLayout>
