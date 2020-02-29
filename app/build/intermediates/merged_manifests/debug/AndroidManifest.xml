@@ -20,6 +20,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.ukmku.activity.investor.PaymentMethod0Activity" />
+        <activity android:name="com.example.ukmku.activity.investor.InvestorProductActivity" />
+        <activity android:name="com.example.ukmku.activity.investor.InvestorProfileActivity" />
         <activity android:name="com.example.ukmku.fragment.investor.InvestorPortofolioActivity" />
         <activity android:name="com.example.ukmku.fragment.investor.InvestorTransactionActivity" />
         <activity android:name="com.example.ukmku.activity.investor.InvestorTransactionActivity" />

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
     android:background="@color/colorWhite"
-    tools:context=".activity.owner.OwnerProfileActivity">
+    tools:context=".activity.investor.InvestorProfileActivity">
 
     <ImageButton
         android:id="@+id/ib_close"
@@ -53,35 +52,35 @@
         android:layout_marginVertical="30dp" >
 
         <TextView
-            android:id="@+id/tv_profile_owner_detail"
+            android:id="@+id/tv_profile_investor_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_account_circle_black_24dp"
             android:drawablePadding="20dp"
-            android:text="@string/profil_pemilik_usaha"
+            android:text="@string/profil_investor"
             android:textColor="@color/colorBlack"
             android:textSize="20sp"
             android:clickable="true" />
 
         <TextView
-            android:id="@+id/tv_umkm_profit"
+            android:id="@+id/tv_portofolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_show_chart_black_24dp"
+            android:drawablePadding="20dp"
+            android:layout_marginVertical="15dp"
+            android:text="@string/portofolio"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_transaksi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_assignment_black_24dp"
             android:drawablePadding="20dp"
-            android:layout_marginVertical="15dp"
-            android:text="@string/laba_usaha"
-            android:textSize="20sp"
-            android:textColor="@color/colorBlack"
-            android:clickable="true" />
-
-        <TextView
-            android:id="@+id/tv_modal_umkm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_money"
-            android:drawablePadding="20dp"
-            android:text="@string/modal_usaha"
+            android:text="@string/transaksi"
             android:textSize="20sp"
             android:textColor="@color/colorBlack"
             android:clickable="true" />

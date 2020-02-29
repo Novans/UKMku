@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_help_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:lineSpacingExtra="10dp"
+        android:text="Lebih Mudah, pendaftaran transaksi serta monitoring pertumbuhan hasil investasi dapat dilakukan secara online.
+        \nLebih Leluasa, bisa dilakukan dimana dan kapan saja.
+        \nLebih Banyak Pilihan, tersedia berbagai jenis produk yang memiliki reputasi baik
+        \nLebih Informatif, tersedia informasi dan berita aktual tentang dunia investasi." />
+
+</LinearLayout>

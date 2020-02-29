@@ -51,8 +51,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/div_atas"
         android:padding="10dp"
-        android:text="Transfer 50% Keuntungan Anda Dapat
-Dilakukan Melalui Nomor Rekening Bank Kustodian Masing-Masing Produk"
+        android:text="Pembayaran Dapat Dilakukan Melalui Nomor
+        Rekening Bank Kustodian Masing-Masing Produk"
         android:textColor="@android:color/black"
         android:textSize="15dp" />
 
@@ -135,6 +135,7 @@ Dilakukan Melalui Nomor Rekening Bank Kustodian Masing-Masing Produk"
         android:background="@drawable/bg_button_blue"
         android:text="@string/selesai"
         android:textAllCaps="false"
+        android:textSize="20sp"
         android:textColor="@color/colorWhite" />
 
 </RelativeLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="30dp"
+    tools:context=".activity.investor.InvestorProductActivity">
+
+    <TextView
+        android:id="@+id/tv_properti_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="Properti Indo Megah"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ib_back2"
+        android:layout_width="43sp"
+        android:layout_height="43sp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_arrow_back_black_24dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_properti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_back2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_gray"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_manajer_investasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/manajer_investasi"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/iv_logo_manajer_investasi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/logo_login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga/Unit"
+                android:textColor="@color/colorBlack"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_harga_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rp 1.151,03"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bank_kustodian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bank_kustodian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/bank_kustodian"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/iv_logo_bank_kustodian"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_bca_bank_central_asia_logo_svg_vector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keuntungan"
+                android:textColor="@color/colorBlack"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_keuntungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="14,25%"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_barometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_bank_kustodian"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_barometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/barometer"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp" />
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/tv_barometer"
+                android:numStars="5"
+                android:progressTint="@color/colorBlack"
+                android:rating="5"
+                android:secondaryProgressTint="@color/colorBlack" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_riwayat_keuntungan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_properti"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/riwayat_keuntungan"
+        android:textColor="@color/colorBlack" />
+
+    <TableLayout
+        android:id="@+id/tl_riwayat_keuntungan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_riwayat_keuntungan" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/_6_bulan"
+                android:textSize="10sp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/_1_tahun"
+                android:textSize="10sp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/_3_tahun"
+                android:textSize="10sp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/_5_tahun"
+                android:textSize="10sp"
+                android:textColor="@color/colorBlack" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_6_bulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7,125 %"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tv_1_tahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14,25 %"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tv_3_tahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="42,75 %"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tv_5_tahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_grafik_harga_per_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/tl_riwayat_keuntungan"
+        android:text="@string/grafik_harga_per_unit"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_horizontal" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/tv_grafik_harga_per_unit"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_blue"
+        android:text="@string/beli"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

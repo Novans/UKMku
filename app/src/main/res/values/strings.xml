@@ -120,4 +120,20 @@
     <string name="keuntungan">Keuntungan</string>
     <string name="nab">NAB</string>
     <string name="barometer">Barometer</string>
+    <string name="berita">Berita</string>
+    <string name="bank_kustodian">Bank Kustodian</string>
+    <string name="riwayat_keuntungan">Riwayat Keuntungan</string>
+    <string name="_6_bulan">6 Bulan</string>
+    <string name="_1_tahun">1 Tahun</string>
+    <string name="_3_tahun">3 Tahun</string>
+    <string name="_5_tahun">5 Tahun</string>
+    <string name="grafik_harga_per_unit">Grafik Harga per Unit</string>
+    <string name="per_unit">per Unit</string>
+    <string name="min_pembelian">Minimal Pembelian</string>
+    <string name="biaya_pembelian">Biaya Pembelian</string>
+    <string name="jumlah_pembelian">Jumlah Pembelian</string>
+    <string name="_100_000">100.000</string>
+    <string name="_250_000">250.000</string>
+    <string name="_500_000">500.000</string>
+    <string name="batal">Batal</string>
 </resources>

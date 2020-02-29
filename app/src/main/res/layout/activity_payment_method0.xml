@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="30dp"
+    tools:context=".activity.investor.PaymentMethod0Activity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ib_back2"
+            android:gravity="center"
+            android:text="@string/metode_pembayaran"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ib_back2"
+            android:layout_width="43sp"
+            android:layout_height="43sp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_riwayat_keuntungan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title_payment_method"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_riwayat_keuntungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/riwayat_keuntungan"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_riwayat_keuntungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rp 1.151,03"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_tahun_riwayat_keuntungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="18 Februari 2020"
+                android:textColor="@color/colorBlack"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_per_Unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/per_unit"
+                android:textColor="@color/colorBlack"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_min_pembelian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_riwayat_keuntungan"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/min_pembelian"
+            android:textColor="@color/colorBlack"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_min_pembelian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Rp 100.000"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_biaya_pembelian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_min_pembelian"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/biaya_pembelian"
+            android:textColor="@color/colorBlack"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_biaya_pembelian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0%"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_jumlah_pembelian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_biaya_pembelian"
+        android:layout_marginTop="12dp"
+        android:text="@string/jumlah_pembelian"
+        android:textColor="@color/colorBlack"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_jumlah_pembelian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jumlah_pembelian">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Min Rp.100.000"
+            android:inputType="textPersonName"
+            android:textSize="10sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_jumlah_pembelian"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_100_000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_button_blue"
+            android:text="@string/_100_000"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_250_000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_button_blue"
+            android:text="@string/_250_000"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_500_000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_button_blue"
+            android:text="@string/_500_000"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_batal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_media_artist"
+            android:background="@drawable/bg_button_gray"
+            android:text="@string/batal"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/btn_beli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_media_artist"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg_button_blue"
+            android:text="@string/beli"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</RelativeLayout>

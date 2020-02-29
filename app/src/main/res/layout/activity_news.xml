@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/colorWhite"
     tools:context=".activity.general.NewsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/rl_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ib_back2"
+            android:layout_width="43sp"
+            android:layout_height="43sp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/berita"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/bg_menu"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_below="@id/rl_news"
+        android:src="@drawable/bisnis_cover" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_cover"
+        android:layout_marginTop="30dp" >
+
+    <TextView
+        android:id="@+id/tv_news_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Amet blandit proin at nec. Eget quam scelerisque amet amet porta. Vitae proin a, in ut ultricies velit eu tempus. Eget donec ullamcorper ultricies eget sed libero. Faucibus in sed malesuada vulputate fermentum eget in auctor.
+        \n\t\t\tDui sed sit faucibus fringilla ullamcorper. Est odio integer tincidunt adipiscing ut ornare sed. Laoreet porttitor enim morbi tortor, non tellus arcu leo. Semper nibh ornare enim quis. Gravida morbi phasellus ac tristique in volutpat, dolor. Porttitor elementum elit ligula hendrerit integer tincidunt.
+        \n\t\t\tConsectetur ac, rhoncus amet urna eget ornare. Suspendisse integer tempus dictum neque eget ut. Sit donec posuere amet facilisis dignissim dolor imperdiet. Quis lobortis egestas quis id sit diam rhoncus. Massa fusce quam neque iaculis phasellus eget."
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        android:lineSpacingExtra="5dp"/>
+
+    </ScrollView>
+
+</RelativeLayout>
