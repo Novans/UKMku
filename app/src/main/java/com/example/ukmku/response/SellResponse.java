@@ -1,14 +1,15 @@
 package com.example.ukmku.response;
 
-import com.example.ukmku.model.Data;
 import com.example.ukmku.model.Errors;
+import com.example.ukmku.model.Transaction;
+import com.example.ukmku.model.Transactions;
 
-public class BaseResponse {
+public class SellResponse {
     private boolean success;
-    private Data data;
+    private Transactions data;
     private Errors errors;
 
-    public BaseResponse(boolean success, Data data, Errors errors) {
+    public SellResponse(boolean success, Transactions data, Errors errors) {
         this.success = success;
         this.data = data;
         this.errors = errors;
@@ -22,11 +23,11 @@ public class BaseResponse {
         this.success = success;
     }
 
-    public Data getData() {
+    public Transactions getData() {
         return data;
     }
 
-    public void setData(Data data) {
+    public void setData(Transactions data) {
         this.data = data;
     }
 

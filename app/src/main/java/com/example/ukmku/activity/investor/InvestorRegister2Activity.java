@@ -137,20 +137,6 @@ public class InvestorRegister2Activity extends AppCompatActivity implements View
 
         myApi = ApiClient.getClient().create(MyApi.class);
 
-        Call<ReligionResponse> religionCall = myApi.getReligion();
-
-        religionCall.enqueue(new Callback<ReligionResponse>() {
-            @Override
-            public void onResponse(Call<ReligionResponse> call, Response<ReligionResponse> response) {
-                ArrayList<Religion> religions = new ArrayList<>();
-
-            }
-
-            @Override
-            public void onFailure(Call<ReligionResponse> call, Throwable t) {
-
-            }
-        });
 
     }
 

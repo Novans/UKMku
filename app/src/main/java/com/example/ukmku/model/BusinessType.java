@@ -2,8 +2,7 @@ package com.example.ukmku.model;
 
 public class BusinessType {
 
-    private String _id;
-    private String business_type;
+    private String _id, business_type;
 
     public BusinessType(String _id, String business_type) {
         this._id = _id;

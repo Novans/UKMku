@@ -3,10 +3,11 @@ package com.example.ukmku.model;
 import java.sql.Timestamp;
 
 public class User {
-    private String id, name, email, password, status;
+    private String _id, id, name, email, password, status;
     private Timestamp created_at, updated_at;
 
-    public User(String id, String name, String email, String password, String status, Timestamp created_at, Timestamp updated_at) {
+    public User(String _id, String id, String name, String email, String password, String status, Timestamp created_at, Timestamp updated_at) {
+        this._id = _id;
         this.id = id;
         this.name = name;
         this.email = email;
@@ -16,12 +17,20 @@ public class User {
         this.updated_at = updated_at;
     }
 
-    public String getStatus() {
-        return status;
+    public String get_id() {
+        return _id;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void set_id(String _id) {
+        this._id = _id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -48,6 +57,14 @@ public class User {
         this.password = password;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public Timestamp getCreated_at() {
         return created_at;
     }
@@ -63,13 +80,4 @@ public class User {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
 }

@@ -520,7 +520,7 @@
                 android:gravity="center_vertical"
                 android:paddingHorizontal="30dp"
                 android:paddingVertical="7dp"
-                android:text="<10 juta/tahun"
+                android:text="@string/_10_juta_tahun"
                 android:textColor="@color/colorBlack"
                 android:textSize="12sp" />
         </TableRow>

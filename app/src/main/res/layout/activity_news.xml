@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
     android:background="@color/colorWhite"
+    android:padding="30dp"
     tools:context=".activity.general.NewsActivity">
 
     <RelativeLayout
@@ -38,28 +38,28 @@
         android:id="@+id/iv_cover"
         android:layout_width="match_parent"
         android:layout_height="210dp"
-        android:background="@drawable/bg_menu"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="@color/colorWhite"
         android:layout_below="@id/rl_news"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_menu"
+        android:backgroundTint="@color/colorWhite"
         android:src="@drawable/bisnis_cover" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/iv_cover"
-        android:layout_marginTop="30dp" >
+        android:layout_marginTop="30dp">
 
-    <TextView
-        android:id="@+id/tv_news_content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Amet blandit proin at nec. Eget quam scelerisque amet amet porta. Vitae proin a, in ut ultricies velit eu tempus. Eget donec ullamcorper ultricies eget sed libero. Faucibus in sed malesuada vulputate fermentum eget in auctor.
+        <TextView
+            android:id="@+id/tv_news_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Amet blandit proin at nec. Eget quam scelerisque amet amet porta. Vitae proin a, in ut ultricies velit eu tempus. Eget donec ullamcorper ultricies eget sed libero. Faucibus in sed malesuada vulputate fermentum eget in auctor.
         \n\t\t\tDui sed sit faucibus fringilla ullamcorper. Est odio integer tincidunt adipiscing ut ornare sed. Laoreet porttitor enim morbi tortor, non tellus arcu leo. Semper nibh ornare enim quis. Gravida morbi phasellus ac tristique in volutpat, dolor. Porttitor elementum elit ligula hendrerit integer tincidunt.
         \n\t\t\tConsectetur ac, rhoncus amet urna eget ornare. Suspendisse integer tempus dictum neque eget ut. Sit donec posuere amet facilisis dignissim dolor imperdiet. Quis lobortis egestas quis id sit diam rhoncus. Massa fusce quam neque iaculis phasellus eget."
-        android:textColor="@color/colorBlack"
-        android:textSize="13sp"
-        android:lineSpacingExtra="5dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
 
     </ScrollView>
 

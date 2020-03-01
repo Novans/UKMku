@@ -11,6 +11,10 @@
         <item>INVESTOR</item>
     </string-array>
 
+    <string-array name="list_educations">
+        <item>Pilih pendidikan</item>
+    </string-array>
+
     <string-array name="list_gender">
         <item>Jenis Kelamin</item>
         <item>Pria</item>
@@ -136,4 +140,5 @@
     <string name="_250_000">250.000</string>
     <string name="_500_000">500.000</string>
     <string name="batal">Batal</string>
+    <string name="_10_juta_tahun"><![CDATA[<10 juta/tahun]]></string>
 </resources>

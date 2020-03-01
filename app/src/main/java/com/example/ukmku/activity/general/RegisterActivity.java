@@ -18,9 +18,8 @@ import com.example.ukmku.activity.investor.InvestorRegister2Activity;
 import com.example.ukmku.activity.owner.OwnerRegister2Activity;
 import com.example.ukmku.api.ApiClient;
 import com.example.ukmku.api.MyApi;
-import com.example.ukmku.model.Errors;
 import com.example.ukmku.model.Register;
-import com.example.ukmku.response.BaseResponse;
+import com.example.ukmku.response.RegisterResponse;
 import com.google.android.material.textfield.TextInputLayout;
 
 import retrofit2.Call;
@@ -127,11 +126,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         myApi = ApiClient.getClient().create(MyApi.class);
 
-        Call<BaseResponse> registerCall = myApi.register(user);
+        Call<RegisterResponse> registerCall = myApi.register(user);
 
-        registerCall.enqueue(new Callback<BaseResponse>() {
+        registerCall.enqueue(new Callback<RegisterResponse>() {
             @Override
-            public void onResponse(Call<BaseResponse> call, Response<BaseResponse> response) {
+            public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
                 if (response.isSuccessful()) {
                     if (status.equals("Investor")){
                         Intent intent_investor_2 = new Intent(RegisterActivity.this, InvestorRegister2Activity.class);
@@ -146,7 +145,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             }
 
             @Override
-            public void onFailure(Call<BaseResponse> call, Throwable t) {
+            public void onFailure(Call<RegisterResponse> call, Throwable t) {
                 Toast.makeText(RegisterActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
